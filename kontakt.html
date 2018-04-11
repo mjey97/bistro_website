@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+    <meta http-equiv="Content-Language" content="de-DE">                  
+    <meta name="description" content="Croque Francais - Ihr Bistro in Hamburg Eimsbüttel seit 34 Jahren!, richtig leckere Croques, Crepes, Salate und vieles mehr, besuchen Sie uns im Stellinger Weg 8"> 
+    <meta name="page-topic" content="Bistro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  <!-- , user-scalable=no-->
+	  
+    <meta name="geo.region" content="DE-HH" />
+    <meta name="geo.placename" content="Hamburg" />
+    <meta name="geo.position" content="53.57801;9.95154" />
+    <meta name="ICBM" content="53.57801, 9.95154" />
+
+    <title>Croque Francais - Ihr Croque Spezialist in Eimsbüttel</title>    
+    
+    <link rel="stylesheet" media="only print" href="stylesheet/print_pc+tablet+mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px) and (max-width: 420px)" href="stylesheet/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 421px) and (max-width: 1024px)" href="stylesheet/tablet.css">
+    <link rel="stylesheet" media="only screen and (min-width: 1025px)" href="stylesheet/pc.css">
+    
+    <!--<script src="script/js.js"></script>-->
+    <script type="text/javascript">   
+      var viewportHeight = 0;  
+      function setMapSizes() { 
+        var de = document.documentElement;  
+        viewportHeight = (window.innerHeight || self.innerHeight || (de&&de.clientHeight) || document.body.clientHeight);  
+        document.getElementById("gmap_canvas").style.height = (viewportHeight / 3 ) + "px";
+        document.getElementById("gmap_canvas").style.width = "100%"; 
+        /*console.log("height: " + document.getElementById("gmap_canvas").style.height + " width: " + document.getElementById("gmap_canvas").style.width);*/            
+      } 
+      
+      function googleMaps() { 
+        function init_map(){
+          var myOptions = {zoom:14,center:new google.maps.LatLng(53.57801,9.951540000000023),mapTypeId: google.maps.MapTypeId.ROADMAP};
+          map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+          marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(53.57801,9.951540000000023)});
+          infowindow = new google.maps.InfoWindow({content:'<strong>Croque Francais</strong><br>Stellinger Weg 8<br>20255 Hamburg<br>'});
+          google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+          infowindow.open(map,marker);
+        } 
+        setMapSizes(); 
+        init_map();
+        google.maps.event.addDomListener(window, 'load', init_map);
+      }      
+  </script> 
+</head>
+  <body>
+    <div id="cookie"></div>
+    <div id="backgroundScreen"></div>  
+    
+    <!-- HEADER--> 
+    <section id="header">  
+      <p><span>Croque</span> <span>Francais</span></p>
+      <div id="menue">
+        <div id="menue-scroll" onclick="btnMenu();"> 
+          <picture> 
+            <source media="(min-width: 320px) and (max-width: 1024px)" srcset="pics/menue94x46_transparent-white.png">
+            <!---Fallback-->
+            <img src="pics/menue94x46_transparent-white.png" alt="Menü">
+         </picture>
+        </div>
+      </div>    
+    </section>        
+    
+    <!--HEADER MENU-->
+    <section id="header-menu"> 
+      <div id="header-menu-banner"> 
+        <p>Croque Francais</p>
+      </div> 
+      <div id="header-menu-content">
+        <ul>
+          <li onclick="btnMenu(); window.location='http://croque-francais.de';">Home</li>
+          <li id="header-menue-croques" onclick="showMenuCroques();">Croques
+            <div id="header-menue-croque-list-arrow">
+              <img src="pics/arrowDown.png" alt="Bild">
+            </div>
+          </li>     
+          <ul class="header-menue-croque-list">
+            <li onclick="btnMenu(); window.location='http://croque-francais.de#croque_standard';">Standard</li>
+            <li onclick="btnMenu(); window.location='http://croque-francais.de#croque_specialty';">Spezialitäten</li>
+            <li onclick="btnMenu(); window.location='http://croque-francais.de#croque_vegetarian';">Vegetarisch</li>   
+          </ul> 
+          <li onclick="btnMenu(); window.location='http://croque-francais.de#banner-salads';">Salate</li>
+          <li onclick="btnMenu(); window.location='http://croque-francais.de#banner-creps';">Creps</li>
+          <li onclick="btnMenu(); window.location='http://croque-francais.de#banner-drinks';">Getränke</li>
+        </ul>
+      </div>
+    </section>   
+    
+    <!-- CONTACT -->
+    <section id="contact"> 
+      <p>Ihr Croque Laden in Eimsb&uuml;ttel</p>  
+      <div id="anschrift">  
+        <div>
+          <p>Stellinger Weg 8</p> 
+          <p>20255 Hamburg</p>
+          <div id="telephone"> 
+            <img src="pics/telephone.png" alt="" width="32" height="32">
+            <div><a href="tel:+490404911921">040 4 91 19 21</a></div>
+            <p>kein Lieferservice</p>
+          </div> 
+        </div> 
+        <div>
+          <img src="pics/route.png" alt="Wir auf Google Maps" onclick="routeBtn();"> 
+          <!-- tablet: img vom CL von vorne eingang o. drinne -->
+        </div>
+      </div>  
+      <p id="header_business_hours">Öffnungszeiten:</p> 
+      <div id="business_hours">
+        <p>Montag - Samstag</p>    
+        <p>10:00 - 22:30</p>
+        <p>Sonntag</p> 
+        <p>11:00 - 22:30</p>
+      </div>                      
+    </section> 
+    
+    <script>      
+      /*solve the header trouble*/
+      var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if(w > 1024) {
+        //console.log("script impressum.html"); 
+        document.getElementById("contact").style.display = "none";
+        document.getElementById("header").style.display = "none";    
+      }
+  </script>
+
+    <!-- personally-contact -->
+    <section id="personally-contact">
+      <p>Sie wollen Kontakt mit uns aufnehmen?</p> 
+      <p>Kein Problem!</p>
+      <p>Geschäftlich oder Privat, bei Fragen so&shywie Bemerkungen oder Anregungen Ihrerseits sind wir für Sie da bzw. freuen uns auf Ihre Unterstützung!</p>
+      <p>Schreiben Sie mir bitte</p> 
+      <p>kontakt(at)croque-francais.de</p> 
+      <p>In dringlichen Fällen rufen Sie bitte unter der allgemeinen Nummer durch.</p>
+    </section> 
+    
+    <!-- Nebenjob -->
+    <section id="nebenjob">
+      <p>Nebenjob auf 450€ Basis</p>  
+      <p>Sie suchen? Wir haben!</p>
+      <p>Sie haben kein Problem 3x die Woche abends, sowie am Wochenende in Zweierteams zu arbeiten?</p>
+      <p>Sie sind nett, 20+ und lernbereit?</p>
+      <p>Dann Schreiben Sie mir!</p>
+      <p>bewerbung(at)croque-francais.de</p>
+      <p>Hinterlassen Sie Ihren Namen, Telefon&shynummer sowie Ihren bisherigen Wer&shydegang.</p>
+      <p>Trauen Sie sich! Wir wollen Sie!</p> 
+    </section>  
+    
+    <!-- Google Maps --> 
+    <section id="googleMaps">
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAksdfMBxq2XxxlhiGkUo2mKdmWdEU4hyo'></script>
+      <div id='gmap_canvas' style='height:0em; width:100%;'></div>
+    </section>   
+     
+    <!-- FOOTER --> 
+    <footer>
+      <p>Seit 34 Jahren Ihr Croque Laden!</p> 
+      <p>Ihre Meinung ist uns wichtig!</p>
+	  <div id="bewertung">
+		  <div id="yelp-biz-badge-rrc-Gy1J3Czpmshl3xyDWPKeHg" style="cursor: pointer;" onclick="window.location='https://www.yelp.de/biz/croque-francais-hamburg';"> 
+			<img src="pics/yelp/yelp-58.png" height="100%" width="auto" style="cursor: pointer;" onclick="window.location='https://www.yelp.de/biz/croque-francais-hamburg';">  
+		  </div>  
+		  <div id="facebook">
+		  </div>
+	  </div>
+      <p>Anregungen/Lob/Bemerkungen?</p>
+      <p>Schreiben Sie mir doch.</p> 
+      <div id="footer-links">
+        <div>
+          <p style="cursor: pointer;" onclick="window.location='http://croque-francais.de/kontakt.html';">Kontakt</p>
+        </div>
+        <div>
+          <p style="cursor: pointer;" onclick="window.location='http://croque-francais.de/impressum.html';">Impressum</p> 
+        </div>
+      </div> 
+      <div id="website-version"> 
+        <img src="pics/btn_websiteVersion.png" alt="Bild" width="32" height="32">
+        <a>mobile Version ausschalten</a>
+      </div>
+    </footer>
+  </body>  
+  <script type="text/javascript" src="script/always.js"></script>
+</html>

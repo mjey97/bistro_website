@@ -1,0 +1,426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+    <meta http-equiv="Content-Language" content="de-DE">                  
+    <meta name="description" content="Croque Francais - Ihr Bistro in Hamburg Eimsbüttel seit 34 Jahren!, richtig leckere Croques, Crepes, Salate und vieles mehr, besuchen Sie uns im Stellinger Weg 8">
+    <meta name="page-topic" content="Bistro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  <!-- , user-scalable=no-->
+	  
+    <meta name="geo.region" content="DE-HH" />
+    <meta name="geo.placename" content="Hamburg" />
+    <meta name="geo.position" content="53.57801;9.95154" />
+    <meta name="ICBM" content="53.57801, 9.95154" />
+
+    <title>Croque Francais - Ihr Croque Spezialist in Eimsbüttel</title>   
+    
+    <link rel="stylesheet" media="only print" href="stylesheet/print_pc+tablet+mobile.css"> 
+    <link rel="stylesheet" media="only screen and (min-width: 320px) and (max-width: 420px)" href="stylesheet/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 421px) and (max-width: 1025px)" href="stylesheet/tablet.css">
+    <link rel="stylesheet" media="only screen and (min-width: 1025px)" href="stylesheet/pc.css"> 
+    
+  </head>
+  <body>
+    <div id="cookie"></div>
+    <div id="backgroundScreen"></div>
+    
+    <!-- WHEN PAGE CAN't DISPLAYED -->
+    <div id="wrapper">
+      <div id="comment">        
+        <p>Sorry! Ihr Gerät unterstützt unsere technischen Anforderungen leider nicht, wodurch wir Ihnen unsere richtige Website nicht anzeigen können. :/</p>   
+        <p>Wir arbeiten daran hier für Sie eine alternative Website zu erstellen, welche auf Ihrem Gerät angezeigt werden kann.</p>
+        <p>Für die Unannehmlichkeiten entschuldigen wir uns, bitte haben Sie noch ein wenig Geduld.</p>
+        <p>Ihr Croqueladen in Eimsbüttel.</p>     
+        <br />        
+      </div>  
+      <div id="pic_CF"></div>    
+    </div>
+     
+    <!-- PC Front Page -->
+    <div id="images">  
+      <div id="CF_font"></div>
+      <div id="backgroundPic"></div> 
+      <div id="saturation"></div>
+      <div id="overlap_pics"> 
+        <div id="font_arrow"></div> 
+      </div>  
+      <div id="back-show">   
+        <div></div> 
+        <div></div> 
+        <div></div> 
+        <div></div> 
+        <div></div> 
+      </div> 
+      <div id="scrollDown">
+      <p>runter&shy;scrol&shy;len</p>
+      </div>
+    </div>
+      
+    <!-- HEADER--> 
+    <section id="header">  
+      <p><span>Croque</span> <span>Francais</span></p>
+      <div id="menue">
+        <div id="menue-scroll" onclick="btnMenu();"> 
+          <picture> 
+            <source media="(min-width: 320px) and (max-width: 1024px)" srcset="pics/menue94x46_transparent-white.png">
+            <!---Fallback-->
+            <img src="pics/menue94x46_transparent-white.png" alt="Menü">
+         </picture>
+        </div>
+      </div>    
+    </section>
+      
+    <!-- HEADER-MENU-->
+    <section id="header-menu"> 
+      <div id="header-menu-banner"> 
+        <p>Croque Francais</p>
+      </div> 
+      <div id="header-menu-content">
+        <ul>
+          <li onclick="btnMenu(); window.location='http://croque-francais.de';">Home</li>
+          <li id="header-menue-croques" onclick="showMenuCroques();">Croques
+            <div id="header-menue-croque-list-arrow">
+              <img src="pics/arrowDown.png" alt="Listet alle Croquekategorien auf.">
+            </div>
+          </li>     
+          <ul class="header-menue-croque-list">
+            <li onclick="btnMenu(); window.location='http://croque-francais.de#croque_standard';">Standard</li>
+            <li onclick="btnMenu(); window.location='http://croque-francais.de#croque_specialty';">Spezialitäten</li>
+            <li onclick="btnMenu(); window.location='http://croque-francais.de#croque_vegetarian';">Vegetarisch</li>   
+          </ul> 
+          <li onclick="btnMenu(); window.location='http://croque-francais.de#banner-salads';">Salate</li>
+          <li onclick="btnMenu(); window.location='http://croque-francais.de#banner-creps';">Creps</li>
+          <li onclick="btnMenu(); window.location='http://croque-francais.de#banner-drinks';">Getränke</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact"> 
+      <p>Ihr Croque Laden in Eimsb&uuml;ttel</p>  
+      <div id="anschrift">  
+        <div>
+          <p>Stellinger Weg 8</p> 
+          <p>20255 Hamburg</p>
+          <div id="telephone"> 
+            <img src="pics/telephone.png" alt="" width="32" height="32">
+            <div><a href="tel:+490404911921">040 4 91 19 21</a></div>
+            <p>kein Lieferservice</p>
+          </div> 
+        </div> 
+        <div>
+          <img src="pics/route.png" alt="Wir auf Google Maps" onclick="routeBtn();"> 
+          <!-- tablet: img vom CL von vorne eingang o. drinne -->
+        </div>
+      </div>  
+      <p id="header_business_hours">Öffnungszeiten:</p> 
+      <div id="business_hours">
+        <p>Montag - Freitag</p>    
+        <p>11:00 - 22:00</p>
+        <p>Samstag - Sonntag</p> 
+        <p>11:00 - 22:00</p>
+      </div>
+    </section> 
+    
+    <!-- Banner-Croque -->
+    <section id="banner-croque">
+      <div>
+        <p>Croques</p>
+      </div> 
+      <div>
+        <picture> 
+          <source media="(min-width: 320px) and (max-width: 420px)" srcset="pics/banner/croque-mobile.png">
+          <source media="(min-width: 421px) and (max-width: 1024px)" srcset="pics/banner/croque-tablet.png">
+          <source media="(min-width: 1024px)" srcset="pics/banner/font-croque.png">
+          <!---Fallback-->
+          <img src="pics/banner/croque-mobile.png" alt="Bild vom Croque">
+        </picture>
+        <!--<img src="pics/banner/croque-banner_11.png" alt="Bild vom Croque"> -->
+      </div>
+      <div onclick="btnCroqueInfo();">
+        <img src="pics/info_icon_blue.png" alt="Zusätzliche Infos">
+      </div>       
+    </section> 
+    
+    <!-- CROQUES -->
+    <section id="croque">
+      <div id="croque_standard"> 
+        <h3>Standard</h3> 
+        <p><span class="price_s heading-small">Mini</span></p>  
+        <p class="plist-croque-name">Croque Monsieur</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Schinken<sup>2,3,*</sup>, Tomaten, Käse<sup>1</sup></p> 
+        <p class="plist-croque-name">Croque Paris</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Salami<sup>2,3</sup>, Gurken, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Tonno</p>
+        <p class="plist-croque-price"><span class="price_b">6,20€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Thunfisch, Tomaten, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Hawai</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Schinken<sup>2,3,*</sup>, Ananas, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Pute</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Pute, Ananas, Käse<sup>1</sup> oder:</p>
+        <p class="plist-croque-info">Pute, Tomate, Käse<sup>1</sup></p> 
+        <p class="plist-croque-name">Croque Ei</p>
+        <p class="plist-croque-price"><span class="price_b">6,50€</span><span class="price_s">4,10€</span></p>
+        <p class="plist-croque-info">Schinken<sup>2,3,*</sup>, Ei, Mais, Käse<sup>1</sup></p>
+      </div> 
+      <div id="croque_specialty">
+        <h3>Spezialitäten </h3>
+        <p><span class="price_s heading-small">Mini</span></p>  
+        <p class="plist-croque-name">Croque Antalya</p>
+        <p class="plist-croque-price"><span class="price_b">6,10€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Türk.Knobl.wurst, Tomaten, Käse<sup>1</sup></p>
+        <p class="plist-croque-name plist-noPadding"><span class="fontsize_small">oder mit </span>Schafskäse</p> 
+        <p class="plist-croque-price plist-noPadding"><span class="price_b">6,50€</span><span class="price_s">4,10€</span></p>                                                                 
+        <p class="plist-croque-name">Croque Champignons</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Schinken<sup>2,3,*</sup>, Champignons, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Monster</p>
+        <p class="plist-croque-price"><span class="price_b">7,10€</span><span class="price_s">4,10€</span></p>
+        <p class="plist-croque-info">Salami<sup>2,3</sup>, Schinken<sup>2,3,*</sup>, Tomaten, doppel Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Hot Dog</p>
+        <p class="plist-croque-price"><span class="price_b">6,50€</span><span class="price_s">4,10€</span></p>
+        <p class="plist-croque-info">Würstchen<sup>2,3</sup>, Gurken, Ketchup<sup>2</sup>, Senf<sup>2</sup>, Remoulade<sup>2</sup>, Röstzwiebeln, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque India</p>
+        <p class="plist-croque-price"><span class="price_b">6,10€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Pute, Banane, Curry, Käse<sup>1</sup></p> 
+        <p class="plist-croque-name">Croque Royal</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Schinken<sup>2,3,*</sup>, Spargel, Käse<sup>1</sup></p> 
+        <p class="plist-croque-name">Croque Curry-Huhn</p>
+        <p class="plist-croque-price"><span class="price_b">6,10€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Hühnerbrust, Ananas, Curry, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Flatterman</p>
+        <p class="plist-croque-price"><span class="price_b">6,10€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Hühnerbrust, Pfirsich, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Spezial</p>
+        <p class="plist-croque-price"><span class="price_b">7,10€</span><span class="price_s">4,10€</span></p>
+        <p class="plist-croque-info">2xSchinken<sup>2,3,*</sup>, Tomaten, 2xKäse<sup>1</sup></p>           
+        <p class="plist-croque-name">Croque Paradiso</p>
+        <p class="plist-croque-price"><span class="price_b">6,20€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Pute, Pfirsich, Mozzarella</p>
+        <p class="plist-croque-name">Cro. Burgunderbraten</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Burgunderbraten, Tomaten, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Cro. Schweinebraten</p>
+        <p class="plist-croque-price"><span class="price_b">6,50€</span><span class="price_s">4,10€</span></p>
+        <p class="plist-croque-info">Schweinebraten, Tomaten und Camembert</p> 
+        <p class="plist-croque-name plist-noPadding"><span class="fontsize_small">oder mit </span>Käse</p> 
+        <p class="plist-croque-price plist-noPadding"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p> 
+        <p class="plist-croque-name">Croque Gyros</p>
+        <p class="plist-croque-price"><span class="price_b">6,10€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Hühnergyros, Tomaten, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Doppelsalami</p>
+        <p class="plist-croque-price"><span class="price_b">7,10€</span><span class="price_s">4,10€</span></p>
+        <p class="plist-croque-info">2xSalami, 2xKäse<sup>1</sup> + Gurken</p>      
+      </div> 
+      <div id="croque_vegetarian">
+        <h3>Vegetarisch </h3>
+        <p><span class="price_s heading-small">Mini</span></p> 
+        <p class="plist-croque-name">Croque Madame</p>
+        <p class="plist-croque-price"><span class="price_b">5,70€</span><span class="price_s">3,70€</span></p>
+        <p class="plist-croque-info">Tomaten, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Käse</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Käse<sup>1</sup>, Mais, Käse<sup>1</sup></p>
+        <p class="plist-croque-name">Croque Mozzarella</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Mozzarella, Tomaten, Kräuter der Provance</p>
+        <p class="plist-croque-name">Croque Camembert</p>
+        <p class="plist-croque-price"><span class="price_b">6,00€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Camembert, Preiselbeeren<sup>1,2</sup></p>
+        <p class="plist-croque-name">Croque Schafskäse</p>
+        <p class="plist-croque-price"><span class="price_b">6,20€</span><span class="price_s">3,90€</span></p>
+        <p class="plist-croque-info">Schafskäse, Tomaten, Kräuter der Provence</p>
+      </div> 
+    </section> 
+    <!-- Banner-Extras-->
+    <div id="banner-extras" onclick="onClickExtras();" ondblclick="onClickExtras();">
+        <p>Extras</p>
+        <div id="btn-extras">
+          <img src="pics/arrowDown.png" alt=">">
+        </div> 
+    </div>  
+    <!-- Extras -->
+    <div id="extras">
+      <p class="extra-item">Croque auf Mehrkorn</p>
+      <div id="event_extras_1"><span>Lecker!</span></div>
+      <p class="extra-item plist-croque-price">0,50€<sup>&curren;</sup></p>
+      <p class="extra-item">Mais, Röstzwiebeln, Champignons</p>
+      <p class="extra-item plist-croque-price">0,50€<sup>&curren;</sup></p>
+      <p class="extra-item">Schinken<sup>2,3,*</sup>, Käse<sup>1</sup>, Pute, Hühnerfleisch, Türk.Knobl.wurst</p>
+      <p class="extra-item plist-croque-price">1,40€<sup>&curren;</sup></p>
+      <p class="extra-item">Camembert, Mozzarella, Schafskäse</p>
+      <p class="extra-item plist-croque-price">1,40€<sup>&curren;</sup></p>
+      <p id="extras-info" class="extra-item"><sup>&curren;</sup> bei Mini Croques die Hälfte</p>
+    </div>
+    <!-- Banner-Salads -->
+    <section id="banner-salads">     
+      <div>
+        <p>Salate</p>
+      </div> 
+      <div> 
+        <picture> 
+          <source media="(min-width: 320px) and (max-width: 420px)" srcset="pics/banner/salat-mobile.png">
+          <source media="(min-width: 421px) and (max-width: 1024px)" srcset="pics/banner/salat-tablet.png">
+          <source media="(min-width: 1024px)" srcset="pics/banner/font-salad.png">
+          <!---Fallback-->
+          <img src="pics/banner/salat-mobile.png" alt="Bild vom Salat">
+        </picture>
+      </div>
+      <div onclick="btnSalatInfo();">
+        <img src="pics/info_icon_blue.png" alt="Zusätzliche Infos">
+      </div>  
+    </section> 
+    
+    <!-- Salads --> 
+    <section id="salads"> 
+      <p class="plist-salads-name">Käse-Schinken Salat</p>
+      <p class="plist-salads-price">6,50€</p>
+      <p class="plist-salads-info">Eisbergsalat, Gurken, Tomaten, Paprika, Mais, Käse<sup>1</sup> + Schinken<sup>2,3,*</sup></p>
+      <p class="plist-salads-name">Bauernsalat</p>
+      <p class="plist-salads-price">6,50€</p>
+      <p class="plist-salads-info">Eisbergsalat, Gurken, Tomaten, Paprika, Mais, Thunfisch + Schafskäse</p>
+      <p class="plist-salads-name">Thunfischsalat</p>
+      <p class="plist-salads-price">6,50€</p>
+      <p class="plist-salads-info">Eisbergsalat, Gurken, Tomaten, Paprika, Mais, Thunfisch</p>
+      <p class="plist-salads-name">Schafskäsesalat</p>
+      <p class="plist-salads-price">6,50€</p>
+      <p class="plist-salads-info">Eisbergsalat, Gurken, Tomaten, Paprika, Mais, Schafskäse</p>
+   </section> 
+   
+   <!-- Banner-Creps -->
+    <section id="banner-creps">     
+      <div>
+        <p>Crepes</p>
+      </div> 
+      <div>
+        <picture> 
+          <source media="(min-width: 320px) and (max-width: 420px)" srcset="pics/banner/crep-mobile.png">
+          <source media="(min-width: 421px) and (max-width: 1024px)" srcset="pics/banner/crep-tablet.png">
+          <source media="(min-width: 1024px)" srcset="pics/banner/font-crep.png">
+          <!---Fallback-->
+          <img src="pics/banner/crep-mobile.png" alt="Bild vom Crep">
+        </picture>
+      </div> 
+    </section> 
+    
+    <!-- Salads --> 
+    <section id="creps"> 
+      <p class="plist-crep-name">Zimt & Zucker</p>
+      <p class="plist-crep-price">2,50€</p>
+      <p class="plist-crep-name">Apfelmus</p>
+      <p class="plist-crep-price">2,70€</p>
+      <p class="plist-crep-name">Nutella</p>
+      <p class="plist-crep-price">2,70€</p>
+      <p class="plist-crep-name">Banane</p>
+      <p class="plist-crep-price">2,70€</p> 
+      <p class="plist-crep-name">Kinderschokolade</p>
+      <p class="plist-crep-price">3,00€</p>
+      <p class="plist-crep-name">Banane & Nutella<sup>3</sup></p>
+      <p class="plist-crep-price">3,50€</p>
+      <p class="plist-crep-name">Käse<sup>1</sup></p>
+      <p class="plist-crep-price">3,50€</p>
+      <p class="plist-crep-name">Schinken<sup>2,3,*</sup></p>
+      <p class="plist-crep-price">3,50€</p>
+      <p class="plist-crep-name">Käse<sup>1</sup> & Schinken<sup>2,3,*</sup></p>
+      <p class="plist-crep-price">3,50€</p>
+      <p class="plist-crep-name">Camembert & Preiselbeeren</p>
+      <p class="plist-crep-price">3,50€</p>
+    </section> 
+   
+    <!-- Banner-Drinks -->
+    <section id="banner-drinks">     
+      <div>
+        <p>Getränke</p>
+      </div> 
+      <div> 
+        <picture> 
+          <source media="(min-width: 320px) and (max-width: 420px)" srcset="pics/banner/drinks-mobile.png">
+          <source media="(min-width: 421px) and (max-width: 1024px)" srcset="pics/banner/drinks-tablet.png">
+          <source media="(min-width: 1024px)" srcset="pics/banner/font-drink.png">
+          <!---Fallback-->
+          <img src="pics/banner/drinks-mobile.png" alt="Bild von Getränken">
+        </picture>
+      </div> 
+    </section> 
+    
+    <!-- Drinks --> 
+    <section id="drinks"> 
+      <p class="plist-drinks-name">Capri-Sonne<sup>3</sup></p>
+      <p class="plist-drinks-info">0,20 l</p>
+      <p class="plist-drinks-price">0,90€</p>     
+      <p class="plist-drinks-name">Mineralwasser</p>
+      <p class="plist-drinks-info">0,25 l</p>
+      <p class="plist-drinks-price">1,50€</p>
+      <p class="plist-drinks-name">Coca-Cola<sup>1,4</sup></p>
+      <p class="plist-drinks-info">0,33 l</p>
+      <p class="plist-drinks-price">1,80€</p> 
+      <p class="plist-drinks-name">Fanta<sup>1,3</sup></p>
+      <p class="plist-drinks-info">0,33 l</p>
+      <p class="plist-drinks-price">1,80€</p>
+      <p class="plist-drinks-name">Sprite<sup>1,3</sup></p>
+      <p class="plist-drinks-info">0,33 l</p>
+      <p class="plist-drinks-price">1,80€</p>
+      <p class="plist-drinks-name">Mezzo Mix<sup>1,4</sup></p>
+      <p class="plist-drinks-info">0,33 l</p>
+      <p class="plist-drinks-price">1,80€</p>
+      <p class="plist-drinks-name">Lift<sup>1,3</sup></p>
+      <p class="plist-drinks-info">0,33 l</p>
+      <p class="plist-drinks-price">1,80€</p>
+      <p class="plist-drinks-name">Coke Zero<sup>1,4</sup></p>
+      <p class="plist-drinks-info">0,33 l</p>
+      <p class="plist-drinks-price">1,80€</p>
+      <p class="plist-drinks-name">Vitamalz<sup>1,2</sup></p>
+      <p class="plist-drinks-info">0,33 l</p>
+      <p class="plist-drinks-price">1,80€</p>
+
+      <p class="plist-drinks-name">Becher Kaffee<sup>4</sup></p>
+      <p class="plist-drinks-info"></p>
+      <p class="plist-drinks-price">1,50€</p>
+    </section>
+    
+    <!-- Infotabelle --> 
+    <section id="infotabelle">  
+      <p class="infotable-text"><span class="infotable-number">1</span> mit Farbstoff</p> 
+      <p class="infotable-text"><span class="infotable-number">2</span> Konserviert</p>
+      <p class="infotable-text"><span class="infotable-number">3</span> mit Antioxidationsmittel</p>  
+      <p class="infotable-text"><span class="infotable-number">4</span> koffeinhaltig</p>
+      <p class="infotable-text"><span class="infotable-number">*</span> besteht aus Formfleisch</p> 
+      <p id="infotable-info">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>  
+    </section>
+    
+    <!-- FOOTER --> 
+    <footer>
+      <p>Seit 34 Jahren Ihr Croque Laden!</p> 
+      <p>Ihre Meinung ist uns wichtig!</p>
+      <div id="bewertung">
+        <div id="yelp-biz-badge-rrc-Gy1J3Czpmshl3xyDWPKeHg" > 
+        <!--<img src="pics/yelp/yelp-58.png" alt="Unsere Yelp Bewertung" height="100%" width="auto" style="cursor: pointer;" onclick="window.location='https://www.yelp.de/biz/croque-francais-hamburg';">-->
+        <img src="pics/yelp/yelp-58.png" alt="Unsere Yelp Bewertung" height="100%" width="auto" style="cursor: pointer;" onclick="window.open('https://www.yelp.de/biz/croque-francais-hamburg','');">  
+        
+        </div>  
+        <div id="facebook">
+        </div>
+      </div>
+      <p>Anregungen/Lob/Bemerkungen? </p>
+      <p>Schreiben Sie mir doch.</p> 
+      <div id="footer-links">
+        <div>
+          <p style="cursor: pointer;" onclick="window.location='http://croque-francais.de/kontakt.html';">Kontakt</p>
+        </div>
+        <div>
+          <p style="cursor: pointer;" onclick="window.location='http://croque-francais.de/impressum.html';">Impressum</p> 
+        </div>
+      </div> 
+      <div id="website-version"> 
+        <img src="pics/btn_websiteVersion.png" alt="" width="32" height="32">
+        <a>mobile Version ausschalten</a>
+      </div>
+    </footer>
+  </body> 
+  <script type="text/javascript" src="script/always.js"></script> 
+</html>
