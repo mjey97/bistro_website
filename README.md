@@ -1,5 +1,5 @@
 # bistro_website
-first real website ever made
+first real website ever made - goal was to support fullly RWD
 
 personal project - serves for showing code
 
@@ -9,6 +9,4 @@ It's the website of a bistro (design needs an overwork) - I'm currently working 
 See result:
 www.croque-francais.de
 
-
-
-
+(first loading time outside Germany is very long - have no clue why)
